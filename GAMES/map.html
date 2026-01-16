@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Les Gardiens du Temps — Carte</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/game css/map.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    ⏳ <span>Les Gardiens du Temps</span>
+  </div>
+
+  <div class="actions">
+    <button class="icon-btn">📜</button>
+    <button class="icon-btn">📘</button>
+    <button class="icon-btn">👤</button>
+  </div>
+</header>
+
+<section class="epoch-panel">
+  <div class="epoch-header">
+    🗂️ <strong>Époque</strong>
+  </div>
+
+  <div class="epochs">
+    <button class="epoch active">Antiquity</button>
+    <button class="epoch gold">Medieval</button>
+    <button class="epoch">Royal</button>
+    <button class="epoch">Revolution</button>
+    <button class="epoch">Modern</button>
+  </div>
+
+  <button class="toggle-zones">
+    👁️ Montrer zones inexplorées
+  </button>
+</section>
+
+<main class="map-area">
+  <img
+    src="../images/photo-1617565085015-13cb9d366120.jpg"
+    alt="Map"
+    class="map-bg"
+  />
+
+  <!-- Points d’énigmes -->
+  <div class="marker" style="top:40%; left:48%;">★</div>
+  <div class="marker" style="top:45%; left:60%;">★</div>
+</main>
+
+<footer class="stats-bar">
+  <div class="stat">
+    <span class="value">3</span>
+    <span class="label">Découvertes</span>
+  </div>
+  <div class="stat">
+    <span class="value">2</span>
+    <span class="label">À explorer</span>
+  </div>
+  <div class="stat">
+    <span class="value">12</span>
+    <span class="label">Points</span>
+  </div>
+</footer>
+
+<script src="/JS/map.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+:root {
+  --bg-dark: #0e1118;
+  --panel: #141a2a;
+  --panel-border: #2a3250;
+  --gold: #e0b84c;
+  --text: #e6e6e6;
+  --muted: #9aa0b5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text);
+}
+
+/* TOPBAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(#121621, #0e1118);
+}
+
+.brand span {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.actions .icon-btn {
+  background: #1b2140;
+  border: none;
+  color: var(--gold);
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+/* EPOCH PANEL */
+.epoch-panel {
+  background: linear-gradient(#141a2a, #101525);
+  border: 1px solid var(--panel-border);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.epochs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.8rem 0;
+}
+
+.epoch {
+  background: #2a3250;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  opacity: 0.7;
+}
+
+.epoch.active {
+  background: #3b4470;
+  opacity: 1;
+}
+
+.epoch.gold {
+  background: var(--gold);
+  color: #1a1a1a;
+}
+
+.toggle-zones {
+  background: #202650;
+  border: none;
+  color: var(--muted);
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+}
+
+/* MAP */
+.map-area {
+  position: relative;
+  height: 55vh;
+  margin: 1rem;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+}
+
+.map-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.6) brightness(0.7);
+}
+
+/* MARKERS */
+.marker {
+  position: absolute;
+  background: var(--gold);
+  color: black;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(224,184,76,0.7);
+}
+
+/* STATS */
+.stats-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background: linear-gradient(#141a2a, #101525);
+}
+
+.stat {
+  text-align: center;
+}
+
+.value {
+  color: var(--gold);
+  font-size: 1.3rem;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
