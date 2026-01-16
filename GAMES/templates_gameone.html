@@ -2,46 +2,61 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Les Gardiens du Temps</title>
+  <title>ARCANA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
   <link rel="stylesheet" href="/game css/style.css" />
 </head>
 <body>
 
-  <!-- Texture + profondeur -->
-  <div class="background"></div>
+<header class="topbar">
+  <div class="logo">ARCANA | <a href="/PAGES/dashbord.html">retour</a></div>
+  <div class="score">⭐ <span id="score">0</span> pts</div>
+</header>
 
-  <!-- Particules dorées -->
-  <canvas id="particles"></canvas>
+<button id="addRiddleBtn" class="primary">
+  + Ajouter une énigme
+</button>
 
-  <!-- Contenu -->
-  <main class="hero">
-    <h1 class="title">
-      LES GARDIENS<br />
-      <span>DU TEMPS</span>
-    </h1>
+<div class="map-wrapper">
+  <div id="map"></div>
+</div>
 
-    <p class="subtitle">
-      Découvrez les secrets enfouis de Paris à travers le temps.<br />
-      Une aventure historique grandeur nature vous attend.
-    </p>
+<!-- MODAL JEU -->
+<div class="modal hidden" id="riddleModal">
+  <div class="card">
+    <h2 id="riddleTitle"></h2>
+    <p id="riddleQuestion"></p>
 
-    <div class="icons">
-      <span>⌛</span>
-      <span>🧭</span>
-      <span>📜</span>
-      <span>🗺️</span>
-    </div>
+    <input id="answerInput" placeholder="Votre réponse..." />
 
-    <a class="cta" href="/GAMES/map.html">
-      Commencer l’Aventure
-    </a>
+    <button id="validateBtn">Valider</button>
+    <button id="hintBtn" class="secondary">💡 Indice</button>
+    <button id="quitBtn" class="secondary">Quitter</button>
 
-    <p class="footer">
-      Une expérience culturelle premium
-    </p>
-  </main>
+    <p class="timer">⏱️ <span id="timer">0</span>s</p>
+  </div>
+</div>
 
-  <script src="effects.js"></script>
+<!-- MODAL CRÉATION -->
+<div class="modal hidden" id="createModal">
+  <div class="card">
+    <h2>Nouvelle énigme</h2>
+
+    <textarea id="newQuestion" placeholder="Texte de l’énigme"></textarea>
+    <input id="newAnswer" placeholder="Réponse" />
+    <input id="newHint1" placeholder="Indice 1" />
+    <input id="newHint2" placeholder="Indice 2 (optionnel)" />
+
+    <button id="saveRiddleBtn">Enregistrer</button>
+    <button id="cancelRiddleBtn" class="secondary">Annuler</button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/JS/game.js"></script>
 </body>
 </html>
