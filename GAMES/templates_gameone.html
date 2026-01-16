@@ -5,15 +5,18 @@
   <title>ARCANA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet"
-        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
 
   <link rel="stylesheet" href="/game css/style.css" />
 </head>
 <body>
 
 <header class="topbar">
-  <div class="logo">ARCANA | <a href="/PAGES/dashbord.html">retour</a></div>
+  <div class="logo">ARCANA</div>
   <div class="score">⭐ <span id="score">0</span> pts</div>
 </header>
 
@@ -25,7 +28,7 @@
   <div id="map"></div>
 </div>
 
-<!-- MODAL JEU -->
+<!-- MODAL ÉNIGME -->
 <div class="modal hidden" id="riddleModal">
   <div class="card">
     <h2 id="riddleTitle"></h2>
@@ -56,7 +59,10 @@
   </div>
 </div>
 
+<!-- Leaflet JS -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- GAME JS -->
 <script src="/JS/game.js"></script>
 </body>
 </html>

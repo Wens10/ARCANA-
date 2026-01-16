@@ -67,7 +67,12 @@ body{
   box-shadow:0 0 40px rgba(0,217,255,.25);
 }
 
-#map{width:100%;height:100%}
+#map{
+  width:100%;
+  height:100%;
+  position:relative;
+  z-index:1;
+}
 
 .leaflet-tile{
   filter:brightness(1) contrast(1.1);
@@ -77,6 +82,7 @@ body{
 .modal{
   position:fixed;
   inset:0;
+  z-index: 9999;
   background:rgba(5,7,13,.85);
   backdrop-filter:blur(6px);
   display:grid;

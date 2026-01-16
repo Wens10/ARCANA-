@@ -58,12 +58,14 @@ body {
 
 /* STATS */
 .stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .stat {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
   text-align: center;
 }
 
