@@ -1,0 +1,113 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Georgia", "Times New Roman", serif;
+  background: #0b0d12;
+  color: #e8d8a8;
+  overflow: hidden;
+}
+
+/* BACKGROUND TEXTURE */
+.background {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, rgba(255,215,120,0.08), transparent 55%),
+    url(/images/photo-1617565085015-13cb9d366120.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: contrast(1.1) brightness(0.5);
+  z-index: 0;
+}
+
+/* CANVAS PARTICLES */
+#particles {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* TITLE */
+.title {
+  font-size: clamp(3rem, 6vw, 5.2rem);
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  color: #dcaa05;
+  text-shadow:
+    0 0 20px rgba(226,197,106,0.4),
+    0 0 60px rgba(226,197,106,0.2);
+  margin-bottom: 1.6rem;
+}
+
+.title span {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+/* SUBTITLE */
+.subtitle {
+  max-width: 680px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #8d721b;
+  opacity: 0.9;
+  margin-bottom: 2.2rem;
+}
+
+/* ICONS */
+.icons {
+  display: flex;
+  gap: 1.8rem;
+  font-size: 1.4rem;
+  color: #e2c56a;
+  opacity: 0.85;
+  margin-bottom: 2.4rem;
+}
+
+/* CTA BUTTON */
+.cta {
+  background: #eab60b;
+  color: #1a1a1a;
+  border: none;
+  padding: 0.9rem 2.4rem;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.05em;
+  transition: all 0.35s ease;
+  box-shadow: 0 0 25px rgba(107, 87, 22, 0.4);
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 40px rgba(226,197,106,0.6);
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 3.5rem;
+  font-size: 0.85rem;
+  opacity: 0.5;
+  letter-spacing: 0.05em;
+}

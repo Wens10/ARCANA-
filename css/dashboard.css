@@ -1,0 +1,221 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #05070d, #020204);
+  color: white;
+  min-height: 100vh;
+}
+
+/* APP LAYOUT */
+.app {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: rgba(10, 14, 25, 0.85);
+  border-right: 1px solid rgba(160,210,255,0.15);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* PROFILE */
+.profile {
+  text-align: center;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #7abaff, #3a5bdc);
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto 1rem;
+}
+
+.username {
+  font-size: 1.1rem;
+}
+
+.title {
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  opacity: 0.6;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.value {
+  font-size: 1.3rem;
+}
+
+.label {
+  font-size: 0.6rem;
+  opacity: 0.6;
+}
+
+/* BADGES */
+.badges h3 {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  opacity: 0.6;
+  margin-bottom: 0.8rem;
+}
+
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.badge {
+  font-size: 0.6rem;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid rgba(160,210,255,0.4);
+  border-radius: 999px;
+}
+
+/* MENU */
+.menu {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.menu-item {
+  background: none;
+  border: none;
+  color: white;
+  opacity: 0.6;
+  padding: 0.6rem 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-item.active {
+  opacity: 1;
+}
+
+.menu-item.logout {
+  opacity: 0.4;
+}
+
+/* CONTENT */
+.content {
+  padding: 3rem;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+/* GAMES GRID */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+}
+
+/* GAME CARD */
+.game-card {
+  background: rgba(10, 14, 25, 0.75);
+  border: 1px solid rgba(160,210,255,0.15);
+  border-radius: 18px;
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+  transition: transform 0.35s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-6px);
+}
+
+/* COVER */
+.game-cover {
+  height: 150px;
+  background-image: url(/images/Gemini_Generated_Image_bu31hlbu31hlbu31.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+
+
+/* INFO */
+.game-info {
+  padding: 1.6rem;
+}
+.game-info a {
+  text-decoration: none;
+  color: white;
+}
+.game-info p {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin: 0.4rem 0 1.4rem;
+}
+
+.play-btn {
+  padding: 0.7rem 2rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(160,210,255,0.6);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+/* CREATE CARD */
+.create-card {
+  display: grid;
+  place-items: center;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(160,210,255,0.05),
+    rgba(160,210,255,0.05) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+.create-btn {
+  background: none;
+  border: none;
+  color: rgba(180,220,255,0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.plus {
+  font-size: 4rem;
+}

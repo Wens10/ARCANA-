@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARCANA — Tableau de bord</title>
+  <link rel="stylesheet" href="/css/dashboard.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR PROFILE -->
+  <aside class="sidebar">
+
+    <div class="profile">
+      <div class="avatar">A</div>
+      <h2 class="username">Alex Morgan</h2>
+      <p class="title">Gardien du Temps</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="value">128</span>
+        <span class="label">Énigmes</span>
+      </div>
+      <div class="stat">
+        <span class="value">12</span>
+        <span class="label">Jeux</span>
+      </div>
+      <div class="stat">
+        <span class="value">4</span>
+        <span class="label">Villes</span>
+      </div>
+    </div>
+
+    <div class="badges">
+      <h3>Badges</h3>
+      <div class="badge-list">
+        <span class="badge">Archiviste</span>
+        <span class="badge">Explorateur</span>
+        <span class="badge">Créateur</span>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <button class="menu-item active">Jeux</button>
+      <button class="menu-item">Profil</button>
+      <button class="menu-item">Paramètres</button>
+      <button class="menu-item logout">Déconnexion</button>
+    </nav>
+
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <h1 class="section-title">Mes jeux</h1>
+
+    <section class="games-grid">
+
+      <!-- BASE GAME -->
+      <div class="game-card">
+        <div class="game-cover">
+          <span class="game-badge">MODÈLE</span>
+        </div>
+        <div class="game-info">
+          <h2>Les Gardiens du Temps</h2>
+          <p>Jeu de base · Exploration historique</p>
+          <a class="play-btn" href="/GAMES/templates_gameone.html">JOUER</a>
+        </div>
+      </div>
+
+      <!-- CREATE GAME -->
+      <div class="game-card create-card">
+        <button class="create-btn">
+          <span class="plus">+</span>
+          <span class="label">Créer un jeu</span>
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>
