@@ -128,3 +128,30 @@ body{
 }
 
 .timer{margin-top:.6rem;color:var(--muted)}
+
+
+.how-to {
+  width: 90%;
+  max-width: 900px;
+  margin: 5rem auto 1rem;
+  padding: 1.2rem 1.5rem;
+  background: linear-gradient(#0f1629, #0a1020);
+  border: 1px solid rgba(224,195,106,0.3);
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0,229,255,0.15);
+}
+
+.how-to h2 {
+  margin-top: 0;
+  color: var(--gold);
+}
+
+.how-to ul {
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.danger {
+  border-color: #ff5a5a;
+  color: #ff5a5a;
+}
